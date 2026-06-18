@@ -1,0 +1,257 @@
+.guide {
+  background: url("/images/components/guide/bg.png");
+  background-size: 100% 100%;
+
+  height: calc(862 / 1920 * 100vw);
+
+  padding-top: calc(558 / 1920 * 100vw);
+
+  position: relative;
+}
+.guide__item {
+  display: flex;
+  flex-direction: column;
+
+  height: calc(300 / 1920 * 100vw);
+
+  background: url("/images/components/guide/bg-item.svg");
+  background-size: calc(6 / 1920 * 100vw) 100%;
+  background-repeat: no-repeat;
+
+  padding-left: calc(12 / 1920 * 100vw);
+
+  position: absolute;
+}
+.guide__item:nth-child(1) {
+  top: calc(275 / 1920 * 100vw);
+  left: calc(198 / 1920 * 100vw);
+}
+.guide__item:nth-child(2) {
+  top: calc(107 / 1920 * 100vw);
+  left: calc(666 / 1920 * 100vw);
+}
+.guide__item:nth-child(3) {
+  top: calc(83 / 1920 * 100vw);
+  left: calc(1117 / 1920 * 100vw);
+}
+.guide__item:nth-child(4) {
+  top: calc(176 / 1920 * 100vw);
+  left: calc(1545 / 1920 * 100vw);
+}
+.guide__item > img {
+  width: calc(64 / 1920 * 100vw);
+  height: calc(64 / 1920 * 100vw);
+}
+.guide__item > a {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: calc(24 / 1920 * 100vw);
+  line-height: 110%;
+  letter-spacing: -0.03em;
+  color: var(--text-white);
+  text-decoration: none;
+
+  margin-top: calc(12 / 1920 * 100vw);
+}
+.guide__text > h2,
+.guide__text > h3 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: calc(96 / 1920 * 100vw);
+  line-height: 86%;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: var(--text-white);
+
+  width: calc(1192 / 1920 * 100vw);
+  margin: 0 auto;
+}
+.guide__text > h2 {
+  color: var(--text-blue);
+}
+
+@media screen and (max-width: 1024px) {
+  .guide {
+    background: url("/images/components/guide/bg-768.png");
+    background-size: 100% calc(454 / 768 * 100vw);
+    background-position: center calc(234 / 768 * 100vw);
+    background-repeat: no-repeat;
+
+    height: auto;
+
+    padding-top: calc(461 / 768 * 100vw);
+
+    position: relative;
+  }
+  .guide__item {
+    display: flex;
+    flex-direction: column;
+
+    height: calc(300 / 768 * 100vw);
+
+    background: url("/images/components/guide/bg-item-768.svg");
+    background-size: calc(6 / 768 * 100vw) 100%;
+    background-repeat: no-repeat;
+
+    padding-left: calc(12 / 768 * 100vw);
+
+    position: absolute;
+  }
+  .guide__item:nth-child(1) {
+    top: calc(225 / 768 * 100vw);
+    left: calc(12 / 768 * 100vw);
+  }
+  .guide__item:nth-child(2) {
+    top: calc(150 / 768 * 100vw);
+    left: calc(162 / 768 * 100vw);
+  }
+  .guide__item:nth-child(3) {
+    top: calc(75 / 768 * 100vw);
+    left: calc(335 / 768 * 100vw);
+  }
+  .guide__item:nth-child(4) {
+    top: calc(0 / 768 * 100vw);
+    left: calc(480 / 768 * 100vw);
+  }
+  .guide__item > img {
+    width: calc(64 / 768 * 100vw);
+    height: calc(64 / 768 * 100vw);
+  }
+  .guide__item > a {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: calc(24 / 768 * 100vw);
+    line-height: 110%;
+    letter-spacing: -0.03em;
+    color: var(--text-white);
+    text-decoration: none;
+
+    margin-top: calc(12 / 768 * 100vw);
+  }
+  .guide__text > h2,
+  .guide__text > h3 {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: calc(64 / 768 * 100vw);
+    line-height: 86%;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: var(--text-white);
+
+    width: 100%;
+    margin: 0 auto;
+  }
+  .guide__text > h2 {
+    color: var(--text-blue);
+  }
+}
+@media screen and (max-width: 768px) {
+  .guide {
+    background: none;
+    background-size: calc(390 / 390 * 100vw) calc(104 / 390 * 100vw);
+    background-position: center calc(361 / 390 * 100vw);
+    background-repeat: no-repeat;
+
+    height: auto;
+    
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: calc(0 / 390 * 100vw);
+    padding-bottom: calc(353 / 390 * 100vw);
+
+    margin-top: calc(80 / 390 * 100vw);
+
+    position: relative;
+  }
+  .guide__item {
+    display: flex;
+    flex-direction: column;
+
+    height: calc(206 / 390 * 100vw);
+
+    background: url("/images/components/guide/bg-item-390.svg");
+    background-size: calc(6 / 390 * 100vw) 100%;
+    background-repeat: no-repeat;
+
+    padding-left: calc(8 / 390 * 100vw);
+
+    position: absolute;
+  }
+  .guide__item:nth-child(1) {
+    background: url("/images/components/guide/bg-item-390-1.svg");
+    background-size: calc(6 / 390 * 100vw) 100%;
+    background-repeat: no-repeat;
+
+    height: calc(206 / 390 * 100vw);
+
+    top: auto;
+    bottom: calc(29 / 390 * 100vw);
+    left: calc(16 / 390 * 100vw);
+  }
+  .guide__item:nth-child(2) {
+    background: url("/images/components/guide/bg-item-390-2.svg");
+    background-size: calc(6 / 390 * 100vw) 100%;
+    background-repeat: no-repeat;
+
+    height: calc(202 / 390 * 100vw);
+
+    top: auto;
+    bottom: calc(88 / 390 * 100vw);
+    left: calc(108 / 390 * 100vw);
+  }
+  .guide__item:nth-child(3) {
+    background: url("/images/components/guide/bg-item-390-3.svg");
+    background-size: calc(6 / 390 * 100vw) 100%;
+    background-repeat: no-repeat;
+
+    height: calc(190 / 390 * 100vw);
+
+    top: auto;
+    bottom: calc(101 / 390 * 100vw);
+    left: calc(208 / 390 * 100vw);
+  }
+  .guide__item:nth-child(4) {
+    background: url("/images/components/guide/bg-item-390-4.svg");
+    background-size: calc(6 / 390 * 100vw) 100%;
+    background-repeat: no-repeat;
+
+    height: calc(150 / 390 * 100vw);
+
+    top: auto;
+    bottom: calc(73 / 390 * 100vw);
+    left: calc(306 / 390 * 100vw);
+  }
+  .guide__item > img {
+    width: calc(32 / 390 * 100vw);
+    height: calc(32 / 390 * 100vw);
+  }
+  .guide__item > a {
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: calc(15 / 390 * 100vw);
+line-height: 110%;
+letter-spacing: -0.03em;
+color: var(--text-white);
+    text-decoration: none;
+
+    width: calc(80 / 390 * 100vw);
+
+    margin-top: calc(12 / 390 * 100vw);
+  }
+  .guide__text > h2,
+  .guide__text > h3 {
+    font-family: var(--second-family);
+font-weight: 700;
+font-size: calc(44 / 390 * 100vw);
+line-height: 86%;
+letter-spacing: -0.04em;
+    text-align: center;
+    color: var(--text-white);
+
+    width: 100%;
+    margin: 0 auto;
+  }
+  .guide__text > h2 {
+    color: var(--text-blue);
+  }
+}

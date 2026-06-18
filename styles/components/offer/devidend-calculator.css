@@ -1,0 +1,170 @@
+.offer {
+  background: url("/images/components/offer/bg_devidend-calculator.png");
+  background-size: 100% 100%;
+}
+.offer__content {
+  padding-top: calc(81 / 1920 * 100vw);
+  padding-bottom: calc(223 / 1920 * 100vw);
+}
+
+.offer__content > .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.offer__content > .container > h1 {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: calc(160 / 1920 * 100vw);
+  line-height: 83%;
+  letter-spacing: -0.08em;
+  text-align: center;
+  color: var(--text-white);
+
+  width: calc(1320 / 1920 * 100vw);
+
+  margin: 0 auto;
+  margin-top: calc(30 / 1920 * 100vw);
+}
+.offer__content > .container > h5 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: calc(20 / 1920 * 100vw);
+  line-height: 110%;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: var(--text-white);
+  margin: 0 auto;
+  margin-top: calc(50 / 1920 * 100vw);
+
+  width: calc(698 / 1920 * 100vw);
+}
+.offer__btn {
+  margin-top: calc(20 / 1920 * 100vw);
+  display: flex;
+  justify-content: center;
+}
+.offer__btn > button {
+  width: calc(259 / 1920 * 100vw);
+  height: calc(58 / 1920 * 100vw);
+}
+.offer__btn > button:last-of-type {
+  margin-left: calc(20 / 1920 * 100vw);
+}
+
+@media screen and (max-width: 1024px) {
+  .offer {
+    background: url("/images/components/offer/bg_devidend-calculator.png");
+    background-size: 100% 100%;
+  }
+  .offer__content {
+    padding-top: calc(179 / 768 * 100vw);
+    padding-bottom: calc(202 / 768 * 100vw);
+  }
+
+  .offer__content > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .offer__content > .container > h1 {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: calc(120 / 768 * 100vw);
+    line-height: 83%;
+    letter-spacing: -0.08em;
+    text-align: center;
+    color: var(--text-white);
+
+    width: 100%;
+
+    margin: 0 auto;
+    margin-top: calc(0 / 768 * 100vw);
+  }
+  .offer__content > .container > h5 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: calc(20 / 768 * 100vw);
+    line-height: 110%;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: var(--text-white);
+    margin: 0 auto;
+    margin-top: calc(55 / 768 * 100vw);
+
+    width: calc(583 / 768 * 100vw);
+  }
+  .offer__btn {
+    margin-top: calc(55 / 768 * 100vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .offer__btn > button {
+    width: calc(259 / 768 * 100vw);
+    height: calc(58 / 768 * 100vw);
+  }
+  .offer__btn > button:last-of-type {
+    margin-left: calc(0 / 768 * 100vw);
+    margin-top: calc(20 / 768 * 100vw);
+  }
+}
+@media screen and (max-width: 768px) {
+  .offer {
+    background: url("/images/components/offer/bg_devidend-calculator.png");
+    background-size: 100% 100%;
+  }
+  .offer__content {
+    padding-top: calc(78 / 390 * 100vw);
+    padding-bottom: calc(117 / 390 * 100vw);
+  }
+
+  .offer__content > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .offer__content > .container > h1 {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: calc(56 / 390 * 100vw);
+    line-height: 100%;
+    letter-spacing: -0.08em;
+    text-align: center;
+    color: var(--text-white);
+
+    width: 100%;
+
+    margin: 0 auto;
+    margin-top: calc(0 / 390 * 100vw);
+  }
+  .offer__content > .container > h5 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: calc(20 / 390 * 100vw);
+    line-height: 110%;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: var(--text-white);
+    margin: 0 auto;
+    margin-top: calc(20 / 390 * 100vw);
+
+    width: 100%;
+  }
+  .offer__btn {
+    margin-top: calc(30 / 390 * 100vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .offer__btn > button {
+    width: 100%;
+    height: calc(58 / 390 * 100vw);
+  }
+  .offer__btn > button:last-of-type {
+    margin-left: calc(0 / 390 * 100vw);
+    margin-top: calc(20 / 390 * 100vw);
+  }
+}

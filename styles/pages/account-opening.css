@@ -1,0 +1,13 @@
+@import "/styles/default.css";
+
+@import "/styles/components/header.css";
+
+@import "/styles/components/offer/account-opening.css";
+
+@import "/styles/components/bonus.css";
+
+@import "/styles/components/steps.css";
+
+@import "/styles/components/advantages.css";
+
+@import "/styles/components/footer.css";

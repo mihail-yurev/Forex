@@ -1,0 +1,339 @@
+.feedback {
+  padding-top: calc(135 / 1920 * 100vw);
+  padding-bottom: calc(135 / 1920 * 100vw);
+
+  background: url("/images/components/feedback/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.feedback > .container > p {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: calc(16 / 1920 * 100vw);
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  color: var(--text-white);
+  text-align: center;
+}
+.feedback > .container > h2 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: calc(64 / 1920 * 100vw);
+  line-height: 95%;
+  letter-spacing: -0.06em;
+  text-align: center;
+  color: var(--text-white);
+
+  margin-top: calc(20 / 1920 * 100vw);
+}
+.feedback > .container > h6 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: calc(16 / 1920 * 100vw);
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: var(--text-white);
+
+  width: calc(571 / 1920 * 100vw);
+  margin: 0 auto;
+  margin-top: calc(13 / 1920 * 100vw);
+}
+.feedback__form {
+  width: calc(575 / 1920 * 100vw);
+  margin: 0 auto;
+  margin-top: calc(17 / 1920 * 100vw);
+
+  display: flex;
+  flex-direction: column;
+}
+.feedback__form > .input > input,
+.feedback__form > .input {
+  width: 100%;
+}
+.feedback__form > .input {
+  margin-bottom: calc(10 / 1920 * 100vw);
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox > input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+
+  outline: none;
+  background: none;
+  border: none;
+
+  width: calc(14 / 1920 * 100vw);
+  height: calc(14 / 1920 * 100vw);
+
+  background: url("/images/ui/checkbox-default.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* Стили для состояния "отмечено" */
+.checkbox > input[type="checkbox"]:checked {
+  background: url("/images/ui/checkbox-checked.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* Стили для состояния "отключено" */
+.checkbox > input[type="checkbox"]:disabled {
+  opacity: 0.5;
+}
+
+.checkbox > p {
+  margin-left: calc(7 / 1920 * 100vw);
+}
+.checkbox > p,
+.checkbox > p > a {
+  font-family: var(--font5);
+  font-weight: 400;
+  font-size: calc(14 / 1920 * 100vw);
+  line-height: 120%;
+  color: var(--text-white);
+}
+.checkbox > p > a {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+.feedback__form-btn {
+  display: flex;
+  column-gap: calc(15 / 1920 * 100vw);
+  margin-top: calc(20 / 1920 * 100vw);
+}
+.feedback__form-btn > button {
+  width: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+  .feedback {
+    padding-top: calc(135 / 768 * 100vw);
+    padding-bottom: calc(135 / 768 * 100vw);
+
+    background: url("/images/components/feedback/bg-768.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .feedback > .container > p {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: calc(16 / 768 * 100vw);
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    color: var(--text-white);
+    text-align: center;
+  }
+  .feedback > .container > h2 {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: calc(64 / 768 * 100vw);
+    line-height: 95%;
+    letter-spacing: -0.06em;
+    text-align: center;
+    color: var(--text-white);
+
+    margin-top: calc(20 / 768 * 100vw);
+  }
+  .feedback > .container > h6 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: calc(16 / 768 * 100vw);
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: var(--text-white);
+
+    width: calc(571 / 768 * 100vw);
+    margin: 0 auto;
+    margin-top: calc(13 / 768 * 100vw);
+  }
+  .feedback__form {
+    width: calc(575 / 768 * 100vw);
+    margin: 0 auto;
+    margin-top: calc(17 / 768 * 100vw);
+
+    display: flex;
+    flex-direction: column;
+  }
+  .feedback__form > .input > input,
+  .feedback__form > .input {
+    width: 100%;
+  }
+  .feedback__form > .input {
+    margin-bottom: calc(10 / 768 * 100vw);
+  }
+  .checkbox {
+    display: flex;
+    align-items: center;
+  }
+
+  .checkbox > input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+
+    outline: none;
+    background: none;
+    border: none;
+
+    width: calc(14 / 768 * 100vw);
+    height: calc(14 / 768 * 100vw);
+
+    background: url("/images/ui/checkbox-default.svg");
+    background-size: 100% 100%;
+  }
+
+  /* Стили для состояния "отмечено" */
+  .checkbox > input[type="checkbox"]:checked {
+    background: url("/images/ui/checkbox-checked.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  /* Стили для состояния "отключено" */
+  .checkbox > input[type="checkbox"]:disabled {
+    opacity: 0.5;
+  }
+
+  .checkbox > p {
+    margin-left: calc(7 / 768 * 100vw);
+  }
+  .checkbox > p,
+  .checkbox > p > a {
+    font-family: var(--font5);
+    font-weight: 400;
+    font-size: calc(14 / 768 * 100vw);
+    line-height: 120%;
+    color: var(--text-white);
+  }
+  .checkbox > p > a {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+  }
+  .feedback__form-btn {
+    display: flex;
+    column-gap: calc(15 / 768 * 100vw);
+    margin-top: calc(20 / 768 * 100vw);
+  }
+  .feedback__form-btn > button {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .feedback {
+    padding-top: calc(80 / 390 * 100vw);
+    padding-bottom: calc(80 / 390 * 100vw);
+
+    background: url("/images/components/feedback/bg-390.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .feedback > .container > p {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: calc(16 / 390 * 100vw);
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    color: var(--text-white);
+    text-align: center;
+  }
+  .feedback > .container > h2 {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: calc(36 / 390 * 100vw);
+    line-height: 95%;
+    letter-spacing: -0.06em;
+    text-align: center;
+    color: var(--text-white);
+
+    margin-top: calc(10 / 390 * 100vw);
+  }
+  .feedback > .container > h6 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: calc(15 / 390 * 100vw);
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: var(--text-white);
+
+    width: 100%;
+    margin: 0 auto;
+    margin-top: calc(10 / 390 * 100vw);
+  }
+  .feedback__form {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: calc(17 / 390 * 100vw);
+
+    display: flex;
+    flex-direction: column;
+  }
+  .feedback__form > .input > input,
+  .feedback__form > .input {
+    width: 100%;
+  }
+  .feedback__form > .input {
+    margin-bottom: calc(10 / 390 * 100vw);
+  }
+  .checkbox {
+    display: flex;
+    align-items: center;
+  }
+  .checkbox > input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+
+    outline: none;
+    background: none;
+    border: none;
+
+    width: calc(14 / 390 * 100vw);
+    height: calc(14 / 390 * 100vw);
+
+    background: url("/images/ui/checkbox-default.svg");
+    background-size: 100% 100%;
+  }
+
+  /* Стили для состояния "отмечено" */
+  .checkbox > input[type="checkbox"]:checked {
+    background: url("/images/ui/checkbox-checked.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  /* Стили для состояния "отключено" */
+  .checkbox > input[type="checkbox"]:disabled {
+    opacity: 0.5;
+  }
+  .checkbox > p {
+    margin-left: calc(7 / 390 * 100vw);
+  }
+  .checkbox > p,
+  .checkbox > p > a {
+    font-family: var(--font5);
+    font-weight: 400;
+    font-size: calc(14 / 390 * 100vw);
+    line-height: 120%;
+    color: var(--text-white);
+  }
+  .checkbox > p > a {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+  }
+  .feedback__form-btn {
+    display: flex;
+    flex-direction: column;
+    column-gap: calc(15 / 390 * 100vw);
+    row-gap: calc(10 / 390 * 100vw);
+    margin-top: calc(15 / 390 * 100vw);
+  }
+  .feedback__form-btn > button {
+    width: 100%;
+  }
+}

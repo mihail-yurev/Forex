@@ -1,0 +1,17 @@
+@import "/styles/default.css";
+
+@import "/styles/components/header.css";
+
+@import "/styles/components/offer/account-verification.css";
+
+@import "/styles/components/how-to-verify.css";
+
+@import "/styles/components/level.css";
+
+@import "/styles/components/require.css";
+
+@import "/styles/components/faq.css";
+
+@import "/styles/components/feedback.css";
+
+@import "/styles/components/footer.css";

@@ -1,0 +1,109 @@
+.offer {
+  background: url("/images/components/offer/bg_deposit.png");
+  background-size: 100% 100%;
+}
+.offer__content {
+  padding-top: calc(71 / 1920 * 100vw);
+  padding-bottom: calc(20 / 1920 * 100vw);
+}
+
+.offer__content > .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.offer__content > .container > h1 {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: calc(160 / 1920 * 100vw);
+  line-height: 83%;
+  letter-spacing: -0.08em;
+  text-align: center;
+  color: var(--text-white);
+}
+.offer__content > .container > p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: calc(20 / 1920 * 100vw);
+  line-height: 110%;
+  letter-spacing: -0.04em;
+  color: var(--text-white);
+  width: calc(383 / 1920 * 100vw);
+  margin-top: calc(86 / 1920 * 100vw);
+  margin-left: calc(930 / 1920 * 100vw);
+}
+
+@media screen and (max-width: 1024px) {
+  .offer {
+    background: url("/images/components/offer/bg_deposit-768.png");
+    background-size: 100% 100%;
+  }
+  .offer__content {
+    padding-top: calc(180 / 768 * 100vw);
+    padding-bottom: calc(364 / 768 * 100vw);
+  }
+
+  .offer__content > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .offer__content > .container > h1 {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: calc(120 / 768 * 100vw);
+    line-height: 83%;
+    letter-spacing: -0.08em;
+    text-align: center;
+    color: var(--text-white);
+  }
+  .offer__content > .container > p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: calc(20 / 768 * 100vw);
+    line-height: 110%;
+    letter-spacing: -0.04em;
+    color: var(--text-white);
+    text-align: center;
+    width: calc(583 / 768 * 100vw);
+    margin: 0 auto;
+    margin-top: calc(68 / 768 * 100vw);
+  }
+}
+@media screen and (max-width: 768px) {
+  .offer {
+    background: url("/images/components/offer/bg_deposit-390.png");
+    background-size: 100% 100%;
+  }
+  .offer__content {
+    padding-top: calc(78 / 390 * 100vw);
+    padding-bottom: calc(212 / 390 * 100vw);
+  }
+
+  .offer__content > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .offer__content > .container > h1 {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: calc(56 / 390 * 100vw);
+    line-height: 100%;
+    letter-spacing: -0.08em;
+    text-align: center;
+    color: var(--text-white);
+  }
+  .offer__content > .container > p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: calc(20 / 390 * 100vw);
+    line-height: 110%;
+    letter-spacing: -0.04em;
+    color: var(--text-white);
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: calc(30 / 390 * 100vw);
+  }
+}

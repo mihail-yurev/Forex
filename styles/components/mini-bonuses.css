@@ -1,0 +1,183 @@
+.mini-bonuses {
+  padding-bottom: calc(140 / 1920 * 100vw);
+  padding-top: calc(140 / 1920 * 100vw);
+
+  margin-top: calc(170 / 1920 * 100vw);
+
+  background: url("/images/components/mini-bonuses/bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.mini-bonuses > .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mini-bonuses > .container > p {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: calc(16 / 1920 * 100vw);
+  line-height: calc(34 / 1920 * 100vw);
+  letter-spacing: -0.02em;
+  color: var(--text-white);
+  width: calc(214 / 1920 * 100vw);
+  height: calc(34 / 1920 * 100vw);
+  margin: 0 auto;
+  text-align: center;
+
+  background: url("/images/components/offer/descriptor.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.mini-bonuses > .container > h2 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: calc(96 / 1920 * 100vw);
+  line-height: 86%;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: var(--text-white);
+  margin-top: calc(20 / 1920 * 100vw);
+}
+.mini-bonuses > .container > h4 {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: calc(32 / 1920 * 100vw);
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--text-white);
+  margin: 0 auto;
+  margin-top: calc(30 / 1920 * 100vw);
+  width: calc(799 / 1920 * 100vw);
+}
+.mini-bonuses > .container > button {
+  width: calc(342 / 1920 * 100vw);
+  height: calc(58 / 1920 * 100vw);
+  margin: 0 auto;
+  margin-top: calc(23 / 1920 * 100vw);
+}
+
+@media screen and (max-width: 1024px) {
+  .mini-bonuses {
+    padding-bottom: calc(140 / 768 * 100vw);
+    padding-top: calc(140 / 768 * 100vw);
+
+    margin-top: calc(170 / 768 * 100vw);
+
+    background: url("/images/components/mini-bonuses/bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .mini-bonuses > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mini-bonuses > .container > p {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: calc(16 / 768 * 100vw);
+    line-height: calc(34 / 768 * 100vw);
+    letter-spacing: -0.02em;
+    color: var(--text-white);
+    width: calc(214 / 768 * 100vw);
+    height: calc(34 / 768 * 100vw);
+    margin: 0 auto;
+    text-align: center;
+
+    background: url("/images/components/offer/descriptor.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .mini-bonuses > .container > h2 {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: calc(64 / 768 * 100vw);
+    line-height: 86%;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: var(--text-white);
+    margin-top: calc(20 / 768 * 100vw);
+  }
+  .mini-bonuses > .container > h4 {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: calc(24 / 768 * 100vw);
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--text-white);
+    margin: 0 auto;
+    margin-top: calc(35 / 768 * 100vw);
+    width: calc(639 / 768 * 100vw);
+  }
+  .mini-bonuses > .container > button {
+    width: calc(342 / 768 * 100vw);
+    height: calc(58 / 768 * 100vw);
+    margin: 0 auto;
+    margin-top: calc(50 / 768 * 100vw);
+  }
+}
+@media screen and (max-width: 768px) {
+  .mini-bonuses {
+    padding-bottom: calc(80 / 390 * 100vw);
+    padding-top: calc(80 / 390 * 100vw);
+
+    margin-top: calc(160 / 390 * 100vw);
+
+    background: url("/images/components/mini-bonuses/bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .mini-bonuses > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mini-bonuses > .container > p {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: calc(16 / 390 * 100vw);
+    line-height: calc(38 / 390 * 100vw);
+    letter-spacing: -0.02em;
+    color: var(--text-white);
+    width: calc(212 / 390 * 100vw);
+    height: calc(38 / 390 * 100vw);
+    margin: 0 auto;
+    text-align: center;
+
+    background: url("/images/components/offer/descriptor.svg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .mini-bonuses > .container > h2 {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: calc(40 / 390 * 100vw);
+    line-height: 86%;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: var(--text-white);
+    margin-top: calc(20 / 390 * 100vw);
+  }
+  .mini-bonuses > .container > h4 {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: calc(16 / 390 * 100vw);
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--text-white);
+    margin: 0 auto;
+    margin-top: calc(16 / 390 * 100vw);
+    width: calc(328 / 390 * 100vw);
+  }
+  .mini-bonuses > .container > button {
+    width: calc(342 / 390 * 100vw);
+    height: calc(63 / 390 * 100vw);
+    margin: 0 auto;
+    margin-top: calc(30 / 390 * 100vw);
+  }
+}

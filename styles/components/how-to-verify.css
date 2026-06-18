@@ -1,0 +1,166 @@
+.how-to-verify {
+  padding-top: calc(135 / 1920 * 100vw);
+}
+.how-to-verify > .container {
+  display: flex;
+  align-items: center;
+}
+.how-to-verify__column-1,
+.how-to-verify__column-2 {
+  width: 50%;
+}
+.how-to-verify__column-1 {
+  display: flex;
+  align-items: center;
+}
+.how-to-verify__column-1 > img {
+  width: calc(97 / 1920 * 100vw);
+  height: calc(111 / 1920 * 100vw);
+}
+.how-to-verify__column-1 > h2 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: calc(64 / 1920 * 100vw);
+  line-height: 95%;
+  letter-spacing: -0.06em;
+  color: var(--text-white);
+  text-align: left;
+  margin-left: calc(50 / 1920 * 100vw);
+  width: calc(552 / 1920 * 100vw);
+}
+.how-to-verify__column-2 {
+  display: flex;
+  align-items: center;
+}
+.how-to-verify__column-2 > p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: calc(16 / 1920 * 100vw);
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  color: var(--text-white);
+}
+.how-to-verify__column-2 > p:first-of-type {
+  width: calc(404 / 1920 * 100vw);
+}
+.how-to-verify__column-2 > p:last-of-type {
+  width: calc(358 / 1920 * 100vw);
+  margin-left: calc(40 / 1920 * 100vw);
+}
+
+@media screen and (max-width: 1024px) {
+  .how-to-verify {
+    padding-top: calc(100 / 768 * 100vw);
+  }
+  .how-to-verify > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .how-to-verify__column-1,
+  .how-to-verify__column-2 {
+    width: 100%;
+  }
+  .how-to-verify__column-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .how-to-verify__column-1 > img {
+    width: calc(64 / 768 * 100vw);
+    height: calc(73 / 768 * 100vw);
+  }
+  .how-to-verify__column-1 > h2 {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: calc(40 / 768 * 100vw);
+    line-height: 95%;
+    letter-spacing: -0.06em;
+    color: var(--text-white);
+    text-align: left;
+    margin-left: calc(24 / 768 * 100vw);
+    width: calc(404 / 768 * 100vw);
+  }
+  .how-to-verify__column-2 {
+    display: flex;
+    align-items: center;
+    margin-top: calc(85 / 768 * 100vw);
+  }
+  .how-to-verify__column-2 > p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: calc(16 / 768 * 100vw);
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    color: var(--text-white);
+  }
+  .how-to-verify__column-2 > p:first-of-type {
+    width: calc(366 / 768 * 100vw);
+  }
+  .how-to-verify__column-2 > p:last-of-type {
+    width: calc(332 / 768 * 100vw);
+    margin-left: calc(32 / 768 * 100vw);
+  }
+}
+@media screen and (max-width: 768px) {
+  .how-to-verify {
+    padding-top: calc(80 / 390 * 100vw);
+  }
+  .how-to-verify > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .how-to-verify__column-1,
+  .how-to-verify__column-2 {
+    width: 100%;
+  }
+  .how-to-verify__column-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    row-gap: calc(10 / 390 * 100vw);
+  }
+  .how-to-verify__column-1 > img {
+    width: calc(32 / 390 * 100vw);
+    height: calc(37 / 390 * 100vw);
+  }
+  .how-to-verify__column-1 > h2 {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: calc(36 / 390 * 100vw);
+    line-height: 95%;
+    letter-spacing: -0.06em;
+    color: var(--text-white);
+    text-align: center;
+    margin-left: 0;
+    width: 95%;
+  }
+  .how-to-verify__column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: calc(20 / 390 * 100vw);
+  }
+  .how-to-verify__column-2 > p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: calc(14 / 390 * 100vw);
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: var(--text-white);
+  }
+  .how-to-verify__column-2 > p:first-of-type {
+    width: 100%;
+  }
+  .how-to-verify__column-2 > p:last-of-type {
+    width: 100%;
+    margin-left: 0;
+    margin-top: calc(15 / 390 * 100vw);
+  }
+}

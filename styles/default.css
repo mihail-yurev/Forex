@@ -1,0 +1,286 @@
+/* Подключение шрифтов */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "/styles/ui/button/button.css";
+@import "/styles/ui/input/input.css";
+
+/* Переменные */
+:root {
+  --text-white: #fff;
+  --text-light-blue: #7396ff;
+  --text-white-500: rgba(255, 255, 255, 0.5);
+  --text-black: #0d0d0d;
+  --text-blue: #005bff;
+  --text-white-300: rgba(255, 255, 255, 0.3);
+  --text-black-500: rgba(13, 13, 13, 0.5);
+  --background-black: #0d0d0d;
+  --fill-blue: #00e;
+  --fill-white: #fff;
+  --fill-black: #0d0d0d;
+  --fill-green: #00ff2a;
+  --fill-green-500: rgba(0, 177, 56, 0.5);
+  --fill-red: #f00;
+  --fill-dark-1: #191919;
+  --fill-light-blue: #7396ff;
+  --fill-light-grey: #f5f5f3;
+  --fill-dark-grey: #cbcbcb;
+  --fill-orange: #f79e1b;
+  --fill-dark-blue: #2e71b2;
+  --fill-light-blue-2: #e8ecf5;
+  --fill-white-800: rgba(255, 255, 255, 0.8);
+  --fill-white-200: rgba(255, 255, 255, 0.2);
+  --fill-white-100: rgba(255, 255, 255, 0.1);
+  --fill-white-50: rgba(255, 255, 255, 0.05);
+  --fill-white-500: rgba(255, 255, 255, 0.5);
+  --fill-stroke-300: rgba(255, 255, 255, 0.3);
+  --fill-stroke-100: rgba(255, 255, 255, 0.1);
+  --fill-stroke-black-300: rgba(0, 0, 0, 0.3);
+  --fill-blue-100: rgba(0, 91, 255, 0.1);
+  --fill-blue-200: rgba(0, 0, 238, 0.2);
+
+  --font-family: "Sora", sans-serif;
+  --second-family: "Space Grotesk", sans-serif;
+  --third-family: "Sora", sans-serif;
+  --font3: "Sora", sans-serif;
+  --font4: "Sora", sans-serif;
+  --font5: "Sora", sans-serif;
+  --font6: "Poppins", sans-serif;
+  --font7: "Sora", sans-serif;
+  --font8: "Sora", sans-serif;
+  --font9: "Sora", sans-serif;
+  --font10: "Sora", sans-serif;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+a {
+  transition: all 0.3s ease;
+  user-select: none;
+}
+a:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.container {
+  width: calc(1820 / 1920 * 100vw);
+
+  margin: 0 auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+
+  background: #0d0d0d;
+
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
+}
+
+.pre-head {
+  position: relative;
+  left: calc(16 / 1920 * 100vw);
+
+  display: list-item;
+
+  width: max-content;
+}
+.pre-head--center {
+  position: relative;
+  left: calc(16 / 1920 * 100vw);
+
+  display: list-item;
+
+  width: max-content;
+
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: calc(160 / 1920 * 100vw);
+  line-height: 83%;
+  letter-spacing: -0.08em;
+  color: var(--text-white);
+}
+h2 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: calc(64 / 1920 * 100vw);
+  line-height: 95%;
+  letter-spacing: -0.06em;
+  text-align: center;
+  color: var(--text-white);
+}
+h3 {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: calc(32 / 1920 * 100vw);
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--text-white);
+}
+h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: calc(24 / 1920 * 100vw);
+  line-height: 110%;
+  letter-spacing: -0.03em;
+  color: var(--text-white);
+}
+h5 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: calc(20 / 1920 * 100vw);
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  color: var(--text-white);
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: calc(728 / 768 * 100vw);
+  }
+
+  .pre-head {
+    position: relative;
+    left: calc(16 / 768 * 100vw);
+
+    display: list-item;
+
+    width: max-content;
+  }
+  .pre-head--center {
+    position: relative;
+    left: calc(16 / 768 * 100vw);
+
+    display: list-item;
+
+    width: max-content;
+
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: calc(160 / 768 * 100vw);
+    line-height: 83%;
+    letter-spacing: -0.08em;
+    color: var(--text-white);
+  }
+  h2 {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: calc(64 / 768 * 100vw);
+    line-height: 95%;
+    letter-spacing: -0.06em;
+    text-align: center;
+    color: var(--text-white);
+  }
+  h3 {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: calc(32 / 768 * 100vw);
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--text-white);
+  }
+  h4 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: calc(24 / 768 * 100vw);
+    line-height: 110%;
+    letter-spacing: -0.03em;
+    color: var(--text-white);
+  }
+  h5 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: calc(20 / 768 * 100vw);
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    color: var(--text-white);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: calc(358 / 390 * 100vw);
+  }
+
+  .pre-head {
+    position: relative;
+    left: calc(16 / 390 * 100vw);
+
+    display: list-item;
+
+    width: max-content;
+  }
+  .pre-head--center {
+    position: relative;
+    left: calc(16 / 390 * 100vw);
+
+    display: list-item;
+
+    width: max-content;
+
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: calc(160 / 390 * 100vw);
+    line-height: 83%;
+    letter-spacing: -0.08em;
+    color: var(--text-white);
+  }
+  h2 {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: calc(64 / 390 * 100vw);
+    line-height: 95%;
+    letter-spacing: -0.06em;
+    text-align: center;
+    color: var(--text-white);
+  }
+  h3 {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: calc(32 / 390 * 100vw);
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--text-white);
+  }
+  h4 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: calc(24 / 390 * 100vw);
+    line-height: 110%;
+    letter-spacing: -0.03em;
+    color: var(--text-white);
+  }
+  h5 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: calc(20 / 390 * 100vw);
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    color: var(--text-white);
+  }
+}

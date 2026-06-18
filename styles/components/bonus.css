@@ -1,0 +1,113 @@
+.bonus {
+  padding-top: calc(170 / 1920 * 100vw);
+}
+.bonus > .container > p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: calc(16 / 1920 * 100vw);
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  color: var(--text-light-blue);
+  text-align: center;
+}
+.bonus > .container > h2 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: calc(64 / 1920 * 100vw);
+  line-height: 95%;
+  letter-spacing: -0.06em;
+  text-align: center;
+  color: var(--text-white);
+  width: calc(815 / 1920 * 100vw);
+  margin: 0 auto;
+  margin-top: calc(20 / 1920 * 100vw);
+}
+.bonus > .container > h6 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: calc(16 / 1920 * 100vw);
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: var(--text-white);
+  width: calc(583 / 1920 * 100vw);
+  margin: 0 auto;
+  margin-top: calc(20 / 1920 * 100vw);
+}
+
+@media screen and (max-width: 1024px) {
+  .bonus {
+    padding-top: calc(100 / 768 * 100vw);
+  }
+  .bonus > .container > p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: calc(16 / 768 * 100vw);
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    color: var(--text-light-blue);
+    text-align: center;
+  }
+  .bonus > .container > h2 {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: calc(40 / 768 * 100vw);
+    line-height: 95%;
+    letter-spacing: -0.06em;
+    text-align: center;
+    color: var(--text-white);
+    width: calc(547 / 768 * 100vw);
+    margin: 0 auto;
+    margin-top: calc(20 / 768 * 100vw);
+  }
+  .bonus > .container > h6 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: calc(16 / 768 * 100vw);
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: var(--text-white);
+    width: calc(583 / 768 * 100vw);
+    margin: 0 auto;
+    margin-top: calc(20 / 768 * 100vw);
+  }
+}
+@media screen and (max-width: 768px) {
+  .bonus {
+    padding-top: calc(80 / 390 * 100vw);
+  }
+  .bonus > .container > p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: calc(16 / 390 * 100vw);
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    color: var(--text-light-blue);
+    text-align: center;
+  }
+  .bonus > .container > h2 {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: calc(36 / 390 * 100vw);
+    line-height: 95%;
+    letter-spacing: -0.06em;
+    text-align: center;
+    color: var(--text-white);
+    width: 100%;
+    margin: 0 auto;
+    margin-top: calc(15 / 390 * 100vw);
+  }
+  .bonus > .container > h6 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: calc(14 / 390 * 100vw);
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: var(--text-white);
+    width: 100%;
+    margin: 0 auto;
+    margin-top: calc(10 / 390 * 100vw);
+  }
+}

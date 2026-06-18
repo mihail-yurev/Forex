@@ -1,0 +1,299 @@
+.input {
+  position: relative;
+
+  width: fit-content;
+}
+.input > label {
+  position: absolute;
+  top: calc(17.5 / 1920 * 100vw);
+  left: calc(16 / 1920 * 100vw);
+
+  font-family: var(--font6);
+  font-weight: 400;
+  font-size: calc(16 / 1920 * 100vw);
+  line-height: 110%;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: var(--text-white-500);
+
+  z-index: 1;
+  pointer-events: none;
+
+  transition: all 0.3s ease;
+}
+.input > input {
+  background: none;
+  outline: none;
+  border: none;
+
+  border-radius: calc(8 / 1920 * 100vw);
+  padding: calc(16 / 1920 * 100vw);
+  padding-top: calc(23 / 1920 * 100vw);
+  padding-bottom: calc(6 / 1920 * 100vw);
+  width: calc(330 / 1920 * 100vw);
+  height: calc(55 / 1920 * 100vw);
+
+  background: #191919;
+
+  font-family: var(--font6);
+  font-weight: 400;
+  font-size: calc(16 / 1920 * 100vw);
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: var(--text-white);
+
+  transition: all 0.3s ease;
+}
+.input > p {
+  display: none;
+
+  font-family: var(--font9);
+  font-weight: 400;
+  font-size: calc(12 / 1920 * 100vw);
+  line-height: 133%;
+  color: #ff3d00;
+
+  margin-top: calc(5 / 1920 * 100vw);
+
+  transition: all 0.3s ease;
+}
+.input > input:focus + label,
+.input > input:not(:placeholder-shown) + label {
+  top: calc(10 / 1920 * 100vw);
+  left: calc(16 / 1920 * 100vw);
+
+  font-family: var(--font6);
+  font-weight: 400;
+  font-size: calc(13 / 1920 * 100vw);
+  line-height: 110%;
+  letter-spacing: -0.03em;
+  color: var(--text-white-500);
+}
+.input--error > input {
+  border: calc(1 / 1920 * 100vw) solid #da3805;
+}
+.input--error > p {
+  display: block;
+}
+.password > .password__visible {
+  background: none;
+  outline: none;
+  border: none;
+
+  position: absolute;
+  right: calc(16 / 1920 * 100vw);
+  top: calc(15.5 / 1920 * 100vw);
+
+  width: calc(24 / 1920 * 100vw);
+  height: calc(24 / 1920 * 100vw);
+}
+.password > .password__visible--hide {
+  background: url("/images/ui/hide.svg");
+}
+.password > .password__visible--show {
+  background: url("/images/ui/show.svg");
+}
+.password > .password__visible:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .input {
+    position: relative;
+
+    width: fit-content;
+  }
+  .input > label {
+    position: absolute;
+    top: calc(17.5 / 768 * 100vw);
+    left: calc(16 / 768 * 100vw);
+
+    font-family: var(--font6);
+    font-weight: 400;
+    font-size: calc(16 / 768 * 100vw);
+    line-height: 110%;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: var(--text-white-500);
+
+    z-index: 1;
+    pointer-events: none;
+
+    transition: all 0.3s ease;
+  }
+  .input > input {
+    background: none;
+    outline: none;
+    border: none;
+
+    border-radius: calc(8 / 768 * 100vw);
+    padding: calc(16 / 768 * 100vw);
+    padding-top: calc(23 / 768 * 100vw);
+    padding-bottom: calc(6 / 768 * 100vw);
+    width: calc(330 / 768 * 100vw);
+    height: calc(55 / 768 * 100vw);
+
+    background: #191919;
+
+    font-family: var(--font6);
+    font-weight: 400;
+    font-size: calc(16 / 768 * 100vw);
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: var(--text-white);
+
+    transition: all 0.3s ease;
+  }
+  .input > p {
+    display: none;
+
+    font-family: var(--font9);
+    font-weight: 400;
+    font-size: calc(12 / 768 * 100vw);
+    line-height: 133%;
+    color: #ff3d00;
+
+    margin-top: calc(5 / 768 * 100vw);
+
+    transition: all 0.3s ease;
+  }
+  .input > input:focus + label,
+  .input > input:not(:placeholder-shown) + label {
+    top: calc(10 / 768 * 100vw);
+    left: calc(16 / 768 * 100vw);
+
+    font-family: var(--font6);
+    font-weight: 400;
+    font-size: calc(13 / 768 * 100vw);
+    line-height: 110%;
+    letter-spacing: -0.03em;
+    color: var(--text-white-500);
+  }
+  .input--error > input {
+    border: calc(1 / 768 * 100vw) solid #da3805;
+  }
+  .input--error > p {
+    display: block;
+  }
+  .password > .password__visible {
+    background: none;
+    outline: none;
+    border: none;
+
+    position: absolute;
+    right: calc(16 / 768 * 100vw);
+    top: calc(15.5 / 768 * 100vw);
+
+    width: calc(24 / 768 * 100vw);
+    height: calc(24 / 768 * 100vw);
+  }
+  .password > .password__visible--hide {
+    background: url("/images/ui/hide.svg");
+  }
+  .password > .password__visible--show {
+    background: url("/images/ui/show.svg");
+  }
+  .password > .password__visible:hover {
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 768px) {
+  .input {
+    position: relative;
+
+    width: fit-content;
+  }
+  .input > label {
+    position: absolute;
+    top: calc(17.5 / 390 * 100vw);
+    left: calc(16 / 390 * 100vw);
+
+    font-family: var(--font6);
+    font-weight: 400;
+    font-size: calc(16 / 390 * 100vw);
+    line-height: 110%;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: var(--text-white-500);
+
+    z-index: 1;
+    pointer-events: none;
+
+    transition: all 0.3s ease;
+  }
+  .input > input {
+    background: none;
+    outline: none;
+    border: none;
+
+    border-radius: calc(8 / 390 * 100vw);
+    padding: calc(16 / 390 * 100vw);
+    padding-top: calc(23 / 390 * 100vw);
+    padding-bottom: calc(6 / 390 * 100vw);
+    width: calc(330 / 390 * 100vw);
+    height: calc(55 / 390 * 100vw);
+
+    background: #191919;
+
+    font-family: var(--font6);
+    font-weight: 400;
+    font-size: calc(16 / 390 * 100vw);
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: var(--text-white);
+
+    transition: all 0.3s ease;
+  }
+  .input > p {
+    display: none;
+
+    font-family: var(--font9);
+    font-weight: 400;
+    font-size: calc(12 / 390 * 100vw);
+    line-height: 133%;
+    color: #ff3d00;
+
+    margin-top: calc(5 / 390 * 100vw);
+
+    transition: all 0.3s ease;
+  }
+  .input > input:focus + label,
+  .input > input:not(:placeholder-shown) + label {
+    top: calc(10 / 390 * 100vw);
+    left: calc(16 / 390 * 100vw);
+
+    font-family: var(--font6);
+    font-weight: 400;
+    font-size: calc(13 / 390 * 100vw);
+    line-height: 110%;
+    letter-spacing: -0.03em;
+    color: var(--text-white-500);
+  }
+  .input--error > input {
+    border: calc(1 / 390 * 100vw) solid #da3805;
+  }
+  .input--error > p {
+    display: block;
+  }
+  .password > .password__visible {
+    background: none;
+    outline: none;
+    border: none;
+
+    position: absolute;
+    right: calc(16 / 390 * 100vw);
+    top: calc(15.5 / 390 * 100vw);
+
+    width: calc(24 / 390 * 100vw);
+    height: calc(24 / 390 * 100vw);
+  }
+  .password > .password__visible--hide {
+    background: url("/images/ui/hide.svg");
+  }
+  .password > .password__visible--show {
+    background: url("/images/ui/show.svg");
+  }
+  .password > .password__visible:hover {
+    cursor: pointer;
+  }
+}

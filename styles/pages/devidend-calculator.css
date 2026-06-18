@@ -1,0 +1,13 @@
+@import "/styles/default.css";
+
+@import "/styles/components/header.css";
+
+@import "/styles/components/offer/devidend-calculator.css";
+
+@import "/styles/components/calculator.css";
+
+@import "/styles/components/table-ticker.css";
+
+@import "/styles/components/mini-awards.css";
+
+@import "/styles/components/footer.css";
