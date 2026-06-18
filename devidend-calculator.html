@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main</title>
+
+    <script
+      src="https://code.jquery.com/jquery-4.0.0.min.js"
+      integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="styles/pages/devidend-calculator.css" />
+  </head>
+  <body>
+    <div class="offer">
+      <header class="header">
+        <div class="container">
+          <div class="header__control">
+            <div class="header__logo">
+              <a href="">
+                <img src="images/components/header/logo.svg" alt="" />
+              </a>
+            </div>
+            <div class="header__chapter">
+              <div class="header__chapter-item">
+                <img
+                  src="images/components/header/instant account opening.svg"
+                  alt=""
+                />
+                <a href="">Instant account opening</a>
+              </div>
+              <div class="header__chapter-item">
+                <img
+                  src="images/components/header/trading platform.svg"
+                  alt=""
+                />
+                <a href="">Trading platform</a>
+              </div>
+              <div class="header__chapter-item">
+                <img src="images/components/header/deposit.svg" alt="" />
+                <a href="">Deposit / Withdraw</a>
+              </div>
+            </div>
+            <div class="header__lang">
+              <img src="images/components/header/eng lang.svg" alt="" />
+              <p>Eng</p>
+            </div>
+            <div class="header__support">
+              <img src="images/components/header/support.svg" alt="" />
+              <a href="">Support</a>
+            </div>
+            <div class="header__search">
+              <a href=""
+                ><img src="images/components/header/search.svg" alt=""
+              /></a>
+            </div>
+            <div class="header__account">
+              <a href=""
+                ><img src="images/components/header/account.svg" alt=""
+              /></a>
+            </div>
+            <div class="header__mobile">
+              <p>
+                <img src="images/components/header/mobile.svg" alt="">
+              </p>
+            </div>
+          </div>
+          <div class="header__menu">
+            <nav>
+              <ul>
+                <li>For traders</li>
+                <li>For beginners</li>
+                <li>For investors</li>
+                <li>For partners</li>
+                <li>Campaigns</li>
+                <li>Take a break</li>
+                <li>About Instaforex</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div class="offer__content">
+        <div class="container">
+          <h1>Dividend Calculator for Forex Traders</h1>
+          <h5>
+            The section will be helpful for those who trade Share CFDs. The page contains the list of dividends and information on the closest pay date on every NYSE trading account.
+          </h5>
+          <div class="offer__btn">
+            <button class="btn-main">Open an account</button>
+            <button class="btn-secondary">Open Demo account</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="calculator">
+        <div class="container">
+            <div class="calculator__first-column">
+                <h2>Trading the CFD, one should keep the dividend adjustment in mind.</h2>
+                <h3>The amount of dividend adjustment is added to the account balance i</h3>
+                <h4>Dividend correction calculation example:</h4>
+                <p>Committee of directors of Microsoft company(MSFT) declares redeem of quarterly dividend in amount of $0.130 for stock on 10th of June:</p>
+                <h6>
+                    * Ex-Date - 18.08.2009;<br>
+                    * Record Date - 20.08.2009;<br>
+                    * Pay Date - 10.09.2009.
+                </h6>
+                <p>Dividend's amount for the deal with the volume of 1 lot will make 100 x 0.130 = 13 USD. <br>Having a Sell position with the volume of 1 lot (100 stocks) on April 18, 13 USD will be discarded. Having position for buying with lume of 1 lot - 13 USD will be added. Charges will take place in the day of registry hold.</p>
+            </div>
+            <div class="calculator__second-column">
+                <h6>The amount of dividend adjustment is deducted from the account balance if there is an open sell trade on the ex-dividend date.</h6>
+                <h6>The table below contains the next dividends payable dates for every trading instrument of the NYSE group.</h6>
+                <h4>Example:</h4>
+                <p>
+                    If on the ex-date of the dividend A per share #B, there is an open 2 lots buy position in the account, the amount of dividend will be calculated by the formula: 2 lots x 100 shares x A.
+                    <br><br>
+                    If there are several open positions of the share #B, the sum of all positions is taken as A value. When balance of all deals is negative (the sum of deals has SELL-slant), the dividend has a negative value.
+                </p>
+                <div class="calculator__content">
+                    <h3>Dividend calculator</h3>
+                    <div class="calculator__form">
+                        <div class="calculator__input-group">
+                            <label for="">Symbol:</label>
+                            <select name="" id="">
+                                <option value="">#A</option>
+                            </select>
+                        </div>
+                        <div class="calculator__input-group">
+                            <label for="">Volume:</label>
+                            <select name="" id="">
+                                <option value="">0.01</option>
+                            </select>
+                        </div>
+                        <div class="calculator__input-group">
+                            <label for="">Quantity</label>
+                            <input type="text">
+                        </div>
+                        <div class="calculator__input-group">
+                            <label for="">Dividend</label>
+                            <input type="text">
+                        </div>
+                        <div class="calculator__input-group">
+                            <label for="">Ex-Date</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <button class="btn">Calculate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="calculator calculator--mobile">
+        <div class="container">
+            <div class="calculator__first-column">
+                <h2>Trading the CFD, one should keep the dividend adjustment in mind.</h2>
+                <h3>The amount of dividend adjustment is added to the account balance i</h3>
+            </div>
+            <div class="calculator__second-column">
+                <h6>The amount of dividend adjustment is deducted from the account balance if there is an open sell trade on the ex-dividend date.</h6>
+                <h6>The table below contains the next dividends payable dates for every trading instrument of the NYSE group.</h6>
+                <h4>Example:</h4>
+                <p>
+                    If on the ex-date of the dividend A per share #B, there is an open 2 lots buy position in the account, the amount of dividend will be calculated by the formula: 2 lots x 100 shares x A.
+                    <br><br>
+                    If there are several open positions of the share #B, the sum of all positions is taken as A value. When balance of all deals is negative (the sum of deals has SELL-slant), the dividend has a negative value.
+                </p>
+                <h4>Dividend correction calculation example:</h4>
+                <p>Committee of directors of Microsoft company(MSFT) declares redeem of quarterly dividend in amount of $0.130 for stock on 10th of June:</p>
+                <h6>
+                    * Ex-Date - 18.08.2009;<br>
+                    * Record Date - 20.08.2009;<br>
+                    * Pay Date - 10.09.2009.
+                </h6>
+                <p>Dividend's amount for the deal with the volume of 1 lot will make 100 x 0.130 = 13 USD. <br>Having a Sell position with the volume of 1 lot (100 stocks) on April 18, 13 USD will be discarded. Having position for buying with lume of 1 lot - 13 USD will be added. Charges will take place in the day of registry hold.</p>
+                <div class="calculator__content">
+                    <h3>Dividend calculator</h3>
+                    <div class="calculator__form">
+                        <div class="calculator__input-group">
+                            <label for="">Symbol:</label>
+                            <select name="" id="">
+                                <option value="">#A</option>
+                            </select>
+                        </div>
+                        <div class="calculator__input-group">
+                            <label for="">Volume:</label>
+                            <select name="" id="">
+                                <option value="">0.01</option>
+                            </select>
+                        </div>
+                        <div class="calculator__input-group">
+                            <label for="">Quantity</label>
+                            <input type="text">
+                        </div>
+                        <div class="calculator__input-group">
+                            <label for="">Dividend</label>
+                            <input type="text">
+                        </div>
+                        <div class="calculator__input-group">
+                            <label for="">Ex-Date</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <button class="btn">Calculate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-ticker">
+      <div class="container">
+        <div class="table-ticker__table">
+          <div class="table-ticker__thead">
+            <div class="table-ticker__hrow">
+              <div class="table-ticker__th">
+                <p>Ticker</p>
+              </div>
+              <div class="table-ticker__th">
+                <p>Declared Date</p>
+              </div>
+              <div class="table-ticker__th">
+                <p>Record Date</p>
+              </div>
+              <div class="table-ticker__th">
+                <p>Pay Date</p>
+              </div>
+              <div class="table-ticker__th">
+                <p>Ex-Date</p>
+              </div>
+              <div class="table-ticker__th">
+                <p>Amount</p>
+              </div>
+              <div class="table-ticker__th">
+                <p>Period</p>
+              </div>
+            </div>
+          </div>
+          <div class="table-ticker__tbody">
+            <div class="table-ticker__brow">
+              <div class="table-ticker__td">
+                <p>#A</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>20.11.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>31.12.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>22.01.2026</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>31.12.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>0.248</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>Quarter</p>
+              </div>
+            </div>
+            <div class="table-ticker__brow">
+              <div class="table-ticker__td">
+                <p>#A</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>20.11.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>31.12.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>22.01.2026</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>31.12.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>0.248</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>Quarter</p>
+              </div>
+            </div>
+            <div class="table-ticker__brow">
+              <div class="table-ticker__td">
+                <p>#A</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>20.11.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>31.12.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>22.01.2026</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>31.12.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>0.248</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>Quarter</p>
+              </div>
+            </div>
+            <div class="table-ticker__brow">
+              <div class="table-ticker__td">
+                <p>#A</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>20.11.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>31.12.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>22.01.2026</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>31.12.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>0.248</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>Quarter</p>
+              </div>
+            </div>
+            <div class="table-ticker__brow">
+              <div class="table-ticker__td">
+                <p>#A</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>20.11.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>31.12.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>22.01.2026</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>31.12.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>0.248</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>Quarter</p>
+              </div>
+            </div>
+            <div class="table-ticker__brow">
+              <div class="table-ticker__td">
+                <p>#A</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>20.11.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>31.12.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>22.01.2026</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>31.12.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>0.248</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>Quarter</p>
+              </div>
+            </div>
+            <div class="table-ticker__brow">
+              <div class="table-ticker__td">
+                <p>#A</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>20.11.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>31.12.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>22.01.2026</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>31.12.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>0.248</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>Quarter</p>
+              </div>
+            </div>
+            <div class="table-ticker__brow">
+              <div class="table-ticker__td">
+                <p>#A</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>20.11.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>31.12.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>22.01.2026</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>31.12.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>0.248</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>Quarter</p>
+              </div>
+            </div>
+            <div class="table-ticker__brow">
+              <div class="table-ticker__td">
+                <p>#A</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>20.11.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>31.12.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>22.01.2026</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>31.12.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>0.248</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>Quarter</p>
+              </div>
+            </div>
+            <div class="table-ticker__brow">
+              <div class="table-ticker__td">
+                <p>#A</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>20.11.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>31.12.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>22.01.2026</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>31.12.2025</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>0.248</p>
+              </div>
+              <div class="table-ticker__td">
+                <p>Quarter</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mini-awards">
+      <div class="container">
+        <h2>Selected awards</h2>
+        <div class="mini-awards__row">
+          <div class="mini-awards__item">
+            <img src="images/components/mini-awards/item-1.png" alt="" />
+          </div>
+          <div class="mini-awards__item">
+            <img src="images/components/mini-awards/item-2.png" alt="" />
+            <h6>Most Active Broker in Asia 2020</h6>
+          </div>
+          <div class="mini-awards__item">
+            <img src="images/components/mini-awards/item-3.png" alt="" />
+            <h6>Best Affiliate Program 2020</h6>
+          </div>
+          <div class="mini-awards__item">
+            <img src="images/components/mini-awards/item-4.png" alt="" />
+            <h6>Best managed account 2019</h6>
+          </div>
+          <div class="mini-awards__item">
+            <img src="images/components/mini-awards/item-5.png" alt="" />
+            <h6>Best Broker in Asia 2019</h6>
+          </div>
+        </div>
+        <div class="mini-awards__control">
+          <button
+            class="mini-awards__btn mini-awards__btn-prev mini-awards__btn--disabled"
+          >
+            <img src="images/ui/prev-arrow.svg" alt="" />
+          </button>
+          <button class="mini-awards__btn mini-awards__btn-next">
+            <img src="images/ui/next-arrow.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="footer__head">
+          <div class="footer__info">
+            <a href=""
+              ><img src="images/components/footer/logo.svg" alt=""
+            /></a>
+            <div class="footer__lang">
+              <img src="images/components/footer/lang.svg" alt="" />
+              <p>English</p>
+            </div>
+            <p>
+              InstaFinance Ltd, reg. number 1811672<br />
+              Address: 4th Floor, Water's Edge Building,<br />
+              Meridian Plaza, Road Town, Tortola, British<br />
+              Virgin Islands<br />
+              License number SIBA/L/14/1082 issued by the<br />
+              BVI FSC Insta Global Ltd.
+            </p>
+          </div>
+          <div class="footer__nav">
+            <div class="footer__nav-group">
+              <h5>For traders</h5>
+              <ul>
+                <li><a href="">All for traders</a></li>
+                <li><a href="">Instant account opening</a></li>
+                <li><a href="">Trading platform</a></li>
+                <li><a href="">InstaForex bonuses</a></li>
+                <li><a href="">Forex analysis</a></li>
+                <li><a href="">Forex charts</a></li>
+                <li><a href="">Forex TV</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-group">
+              <h5>For beginners</h5>
+              <ul>
+                <li><a href="">All for beginners</a></li>
+                <li><a href="">Open demo account</a></li>
+                <li><a href="">Useful information</a></li>
+                <li><a href="">Getting started</a></li>
+                <li><a href="">Forex Trading FAQ</a></li>
+                <li><a href="">Knowledge Base</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-group">
+              <h5>For investors</h5>
+              <ul>
+                <li><a href="">PAMM-system</a></li>
+                <li><a href="">ForexCopy system</a></li>
+                <li><a href="">PAMM monitoring</a></li>
+                <li><a href="">PAMM traders</a></li>
+                <li><a href="">FAQ: PAMM</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-pre-group">
+              <div class="footer__nav-group">
+                <h5>For partners</h5>
+                <ul>
+                  <li><a href="">Main Page</a></li>
+                  <li><a href="">Registration</a></li>
+                  <li><a href="">Partners area</a></li>
+                  <li><a href="">Advantages for affiliates</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav-group">
+                <h5>About company</h5>
+                <ul>
+                  <li><a href="">Careers</a></li>
+                  <li><a href="">For Press</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__download">
+            <h5>Download trading platform</h5>
+            <div class="footer__download-item">
+              <img src="images/components/footer/windows.svg" alt="" />
+              <h6>Windows MetaTrader</h6>
+            </div>
+            <div class="footer__download-item">
+              <img src="images/components/footer/apple.svg" alt="" />
+              <h6>App store</h6>
+            </div>
+            <div class="footer__download-item">
+              <img src="images/components/footer/google.svg" alt="" />
+              <h6>Google play</h6>
+            </div>
+          </div>
+        </div>
+        <div class="footer__foo">
+          <h5 class="mobile-numbers">
+            InstaFinance Ltd, reg. number 1811672<br>
+            Address: 4th Floor, Water's Edge Building, Meridian Plaza, Road Town, Tortola, British Virgin Islands<br>
+            License number SIBA/L/14/1082 issued by the BVI FSC<br>
+            Insta Global Ltd.
+          </h5>
+          <p>
+            Services are provided under InstaForex brand which is a registered
+            trademark.<br /><br />The company does not serve or provide services
+            to the residents of the USA and certain restricted jurisdictions.
+          </p>
+          <p>
+            Risk disclosure: All investments involve a degree of risk of some
+            kind. Trading financial<br />
+            derivative products comes with a high risk of losing money rapidly
+            due to leverage. You<br />
+            should not engage in trading these instruments unless you fully
+            understand the nature<br />
+            of the transactions you are entering into, and the true extent of
+            your exposure. These<br />
+            types of investments may be suitable for some investors, but they
+            are not for everyone.
+          </p>
+          <p>
+            Copyright © 2007-2025 InstaForex. All<br />
+            rights reserved. Financial services are<br />
+            provided by InstaFintech Group.<br />
+            Privacy Policy Terms and Conditions
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
